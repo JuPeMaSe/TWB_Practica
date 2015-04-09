@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File: home.jsp -->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"	
+   xmlns:html="http://struts.apache.org/tags-html" 		
+   version="2.0">
+<jsp:directive.page contentType="text/html"/>   
+<jsp:output omit-xml-declaration="false"
+ doctype-root-element="html"
+ doctype-public="-//W3C//DTD XHTML 1.1//EN" 
+ doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" />
+ <html:html xhtml="true">
+ <head> 
+   	<link href="threeregion.css" rel="stylesheet" type="text/css" />
+   	   	<title>LinkUNEDin</title>  
+ </head>
+  <body>
+ 	
+  <jsp:directive.include file="header.jsp" />   
+
+  <!--   <div id="content"> -->
+	    <h1>LinkUNEDin</h1>
+	    <h3>Página de inicio del portal</h3>
+	    <p>Este portal se ha creado para aquellos profesionales que decidan compartir con nosotros su currículo, así como, permitir una mejor entrada en el mercado laboral</p>
+	    <p><html:link action="fromhomeconsulta.do">Hacer una consulta </html:link></p>
+	    <p><html:link action="fromhomealta.do">Darse de alta como usuario</html:link></p>
+	    <p><html:link action="fromhomebaja.do">Darse de baja como usuario</html:link></p>
+	    <p><html:link action="fromhomemodificar.do">Modificar un perfil</html:link></p>
+	    <p><html:link action="fromhomeeliminar.do">Eliminar un perfil</html:link></p>
+	    <p><html:link action="fromhomecrear.do">Crear un perfil</html:link></p>
+	    <p><html:link action="fromhomeadministrar.do">Administrar web</html:link></p>
+	    <p><html:link action="creaBD.do">Crear base de datos automática</html:link></p>
+   <!--   </div> -->
+ 
+    <jsp:directive.include file="footer.jsp" />   
+  
+  </body>
+</html:html>
+</jsp:root>
