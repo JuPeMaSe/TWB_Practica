@@ -18,7 +18,7 @@
 <body>
 	<jsp:directive.include file="header.jsp" />
  	<h1>Página de Alta</h1>
-	<p>Aquí hay que desarrollar el formulario de alta de usuario.Ok(Juan)</p>
+	<p>Aquí hay que desarrollar el formulario de alta de usuario.OkJuan</p>
 	 <html:link action="home"><bean:message key="display.link" /></html:link>
 	<jsp:directive.include file="footer.jsp" />
 </body>
