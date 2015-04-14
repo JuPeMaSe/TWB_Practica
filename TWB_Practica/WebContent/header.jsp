@@ -1,6 +1,6 @@
 <div id="navigationbar">
  <a href="homePage.jsp">
-  <img src="webhomecoverlogo.gif" alt="WebHomeCover logo" />
+  <img src="webhomelogo.gif" alt="Web logo" />
  </a>
  <span class="topnavigationlink">
   <a href="homePage.jsp">Home</a>
@@ -9,12 +9,12 @@
   <a href="consultaPage.jsp">P&aacute;gina Consulta</a>
  </span>
  <span class="topnavigationlink">
-  <a href="policies.htm">Contacta con nosotros</a>
+  <a href="contactoPage.htm">Contacta con nosotros</a>
  </span>
 </div>
 <div id="leftnavigation">
  <div class="leftnavigationlink">
-  <a href="build.htm">Ayuda</a>
+  <a href="ayudaPage.htm">Ayuda</a>
  </div>
  <div class="leftnavigationlink">
   <a href="content.htm">Qui&eacute;nes somos</a>

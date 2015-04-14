@@ -10,14 +10,21 @@
  doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" />
  <html:html xhtml="true">
  <head> 
+
+
    	<link href="threeregion.css" rel="stylesheet" type="text/css" />
    	   	<title>LinkUNEDin</title>  
  </head>
   <body>
  	
-  <jsp:directive.include file="header.jsp" />   
+  	<jsp:directive.include file="header.jsp" />   
 
-  <!--   <div id="content"> -->
+  	<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
+  <!--   <div id="content"> --> 
+  	<p align="right">Usuario: 
+		<jsp:getProperty property="userName" name="loginBean"/>
+	</p>
+
 	    <h1>LinkUNEDin</h1>
 	    <h3>Página de inicio del portal</h3>
 	    <p>Este portal se ha creado para aquellos profesionales que decidan compartir con nosotros su currículo, así como, permitir una mejor entrada en el mercado laboral</p>
