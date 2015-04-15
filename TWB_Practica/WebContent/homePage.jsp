@@ -23,7 +23,7 @@
 		<jsp:getProperty property="userName" name="loginBean"/>
 	</p>
 	
-	<p>Sigo intentando entender como funciona Github</p>
+	<!-- <p>Sigo intentando entender como funciona Github</p> Comento para modificar-->
 
 	    <h1>LinkUNEDin</h1>
 	    <h3>Página de inicio del portal</h3>
