@@ -15,15 +15,15 @@
    	<link href="threeregion.css" rel="stylesheet" type="text/css" />
    	   	<title>LinkUNEDin</title>  
  </head>
-  <body>
- 	
-  	<jsp:directive.include file="header.jsp" />   
-
+  <body> 	
+  	<jsp:directive.include file="header.jsp" />
   	<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
   <!--   <div id="content"> --> 
   	<p align="right">Usuario: 
 		<jsp:getProperty property="userName" name="loginBean"/>
 	</p>
+	
+	<p>Sigo intentando entender como funciona Github</p>
 
 	    <h1>LinkUNEDin</h1>
 	    <h3>Página de inicio del portal</h3>
