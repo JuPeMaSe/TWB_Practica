@@ -15,7 +15,11 @@
 	<title>Crear perfil</title>
 </head>
 <body>
- 	<jsp:directive.include file="header.jsp" />   
+ 	<jsp:directive.include file="header.jsp" /> 
+ 			<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
+   			<p align="right">Usuario: 
+				<jsp:getProperty property="userName" name="loginBean"/>
+			</p>  
   	<!--   <div id="content"> -->
 	<h1>Página crear perfil</h1>
 	<p>Aquí habrá que mostrar el formulario para rellenarlo</p>

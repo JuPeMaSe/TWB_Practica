@@ -16,6 +16,10 @@
 </head>
 <body>
  	<jsp:directive.include file="header.jsp" />   
+ 			<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
+   			<p align="right">Usuario: 
+				<jsp:getProperty property="userName" name="loginBean"/>
+			</p>
   	<!--   <div id="content"> -->
 	<h1>Página eliminar perfil</h1>
 	<p>Aquí habrá que mostrar el perfil o los perfiles a eliminar</p>

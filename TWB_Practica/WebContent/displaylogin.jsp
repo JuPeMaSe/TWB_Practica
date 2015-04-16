@@ -11,7 +11,7 @@
 		<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean>
     
   			<h1>display login</h1>
-  			<p>Hasta aquí hemos llegado</p>
+  			<p>Usuario registrado en nuestra base de datos</p>
 			<h2>Nombre de usuario:</h2>
 			<p>
 			<jsp:getProperty property="userName" name="loginBean"/>

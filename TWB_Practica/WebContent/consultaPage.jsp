@@ -15,6 +15,10 @@
 		</head>
 		<body>
 			<jsp:directive.include file="header.jsp" />
+			<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
+   			<p align="right">Usuario: 
+				<jsp:getProperty property="userName" name="loginBean"/>
+			</p>
 			<h1>Página de Consulta</h1>
 			<html:link action="/fromconsulta.do">Volver al inicio</html:link>
 			

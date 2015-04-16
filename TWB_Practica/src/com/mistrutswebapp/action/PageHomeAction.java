@@ -20,14 +20,14 @@ public class PageHomeAction extends Action
 	HttpSession session = request.getSession();
 	LoginBean loginBean = (LoginBean)session.getAttribute("loginBean");
 
-	if (loginBean == null)
+	if (loginBean.getUserName() == null)
 	{
 		log.info("In PageHomeAction: usuario no registrado");
 		return mapping.findForward("noRegistrado");
 	}
 	else
 	{
-		log.info("In PageHomeAction: usuario registrado");
+		log.info("In PageHomeAction: usuario registrado: "+loginBean.getUserName());
 		return mapping.findForward("registrado");
 	}
 	  

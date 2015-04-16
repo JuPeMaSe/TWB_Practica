@@ -54,7 +54,7 @@ public class CreaBDAction extends Action {
               st  = con.createStatement();  
               sql = "CREATE TABLE usuarios (user_ID VARCHAR(20), password VARCHAR(12), nombre VARCHAR(100))";  
               st.executeUpdate(sql);
-              //Borramos los usuarios que existiesen en la tabla empleados  
+              //Borramos los usuarios que existiesen en la tabla usuarios  
               st.executeUpdate("DELETE FROM usuarios");  
            // Varios usuarios de prueba  
               st.executeUpdate("INSERT INTO usuarios (user_ID, password, nombre) VALUES ('jpms', '4367',  'Juan Pedro Marquez Sevilla')");
@@ -70,8 +70,8 @@ public class CreaBDAction extends Action {
  //             st.executeUpdate("SHUTDOWN");  
               
               // Liberamos recursos y cerramos la conexion  
- //             st.close();  
- //             con.close();  
+             st.close();  
+              con.close();  
           } catch (Exception ex){  
               // La tabla ya existia  
           }finally{  

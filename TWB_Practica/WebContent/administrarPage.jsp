@@ -15,7 +15,11 @@
 	<title>Administrador</title>
 </head>
 <body>
-	<jsp:directive.include file="header.jsp" />   
+	<jsp:directive.include file="header.jsp" />
+			<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
+   			<p align="right">Usuario: 
+				<jsp:getProperty property="userName" name="loginBean"/>
+			</p>   
   	<!--   <div id="content"> -->
 	<h1>Página administrador</h1>
 	<p>Aquí habrá que mostrar las posibles modificaciones para el administrador</p>
