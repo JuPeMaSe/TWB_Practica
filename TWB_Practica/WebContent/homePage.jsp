@@ -18,15 +18,11 @@
   <body> 	
   	<jsp:directive.include file="header.jsp" />
   	<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
-  <!--   <div id="content"> --> 
-  	<p align="right">Usuario: 
-		<jsp:getProperty property="userName" name="loginBean"/>
-	</p>
-	
-	<!-- <p>Sigo intentando entender como funciona Github</p> Comento para modificar-->
-
+  <div id="content">  
+  		<p align="right">Usuario: 
+			<jsp:getProperty property="userName" name="loginBean"/>
+		</p>
 	    <h1>LinkUNEDin</h1>
-	    <h2>Conectando a trabajadores\as</h2>
 	    <h3>Página de inicio del portal</h3>
 	    <p>Este portal se ha creado para aquellos profesionales que decidan compartir con nosotros su currículo, así como, permitir una mejor entrada en el mercado laboral</p>
 	    <p><html:link action="fromhomeconsulta.do">Hacer una consulta </html:link></p>
@@ -37,7 +33,7 @@
 	    <p><html:link action="fromhomecrear.do">Crear un perfil</html:link></p>
 	    <p><html:link action="fromhomeadministrar.do">Administrar web</html:link></p>
 	    <p><html:link action="creaBD.do">Crear base de datos automática</html:link></p>
-   <!--   </div> -->
+   </div>
  
     <jsp:directive.include file="footer.jsp" />   
   

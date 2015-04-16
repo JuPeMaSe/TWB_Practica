@@ -15,15 +15,16 @@
 	<title>Modificar Perfil</title>
 </head>
 <body>
-  <jsp:directive.include file="header.jsp" />   
-  		<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
-   			<p align="right">Usuario: 
-				<jsp:getProperty property="userName" name="loginBean"/>
-			</p>
-  <!--   <div id="content"> -->
+	<jsp:directive.include file="header.jsp" />   
+  	<jsp:useBean id="loginBean" class= "com.mistrutswebapp.beans.LoginBean" scope="session"></jsp:useBean> 
+  	<div id="content">
+   		<p align="right">Usuario: 
+			<jsp:getProperty property="userName" name="loginBean"/>
+		</p>
 	    <h1>Página modificar perfil</h1>
 	    <p>Aquí habrá que mostrar el perfil del usuario para editarlo</p>
 	    <html:link action="home"><bean:message key="display.link" /></html:link>
+	</div>
 	<jsp:directive.include file="footer.jsp" />
 </body>
 </html:html>

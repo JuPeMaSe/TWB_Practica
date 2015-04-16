@@ -4,48 +4,69 @@
  "http://struts.apache.org/dtds/struts-config_1_3.dtd">
 
 <struts-config>
-
- <form-beans>
-  <form-bean name="loginBean" type="com.mistrutswebapp.beans.LoginBean" />
- </form-beans>
-<global-forwards type="org.apache.struts.action.ActionForward">
-	<forward name="home" path="/homePage.jsp" redirect="false"/>
-</global-forwards>
-<action-mappings>
-	<action path="/home" forward="/homePage.jsp" />
-	<action path="/fromhomeconsulta" forward="/consultaPage.jsp" />
-	<action path="/fromhomealta" forward="/altaPage.jsp" />
-	<action path="/fromhomebaja"  
-		type= "com.mistrutswebapp.action.PageHomeAction" 
-		input="/homePage.jsp">
-		<forward name="noRegistrado" path="/loginform.jsp" />
-		<forward name="registrado" path="/bajaPage.jsp" />
-	</action>
-	<action path="/fromhomemodificar" forward="/modificarPage.jsp" />
-	<action path="/fromhomeeliminar" forward="/eliminarPage.jsp" />
-	<action path="/fromhomecrear" forward="/crearPage.jsp" />
-	<action path="/fromconsulta" forward="/homePage.jsp" />
-	<action path="/processlogin"
-   		type="com.mistrutswebapp.action.LoginAction"
-   		name="loginBean"
-	   	scope="request"
-	   	validate="true" 
-	   	input="/loginform.jsp" > 
-	   	<forward name="found" path="/displaylogin.jsp" />
-	   	<forward name="notfound" path="/notfound.jsp" />
-	</action>
-	<action path="/fromhomeadministrar" forward="/administrarPage.jsp" />
-	<action path="/creaBD"
-		type="com.mistrutswebapp.action.CreaBDAction"
-		input= "/homePage.jsp">
-		<forward name="Ok" path= "/creadaBD.jsp"/> 
-		<forward name="error" path= "/notfound.jsp"/> 
-	</action>
-</action-mappings>
-	
- <message-resources parameter="ApplicationResources_es" /> 
-
- <plug-in className="org.apache.struts.validator.ValidatorPlugIn"> 
-  <set-property property="pathnames" value="/org/apache/struts/validator/validator-rules-compressed.xml, /WEB-INF/validation.xml"/> 
- </plug-in>
+	<form-beans>
+ 		<form-bean name="loginBean" type="com.mistrutswebapp.beans.LoginBean" />
+ 	</form-beans>
+	<global-forwards type="org.apache.struts.action.ActionForward">
+		<forward name="home" path="/homePage.jsp" redirect="false"/>
+	</global-forwards>
+	<action-mappings>
+		<action path="/home" forward="/homePage.jsp" />
+		<action path="/fromhomeconsulta" forward="/consultaPage.jsp" />
+		<action path="/fromhomealta" 
+			type= "com.mistrutswebapp.action.PageHomeAction" 
+			input="/homePage.jsp">
+			<forward name="noRegistrado" path="/loginform.jsp" />
+			<forward name="registrado" path="/altaPage.jsp" />
+		</action>
+		<action path="/fromhomebaja"  
+			type= "com.mistrutswebapp.action.PageHomeAction" 
+			input="/homePage.jsp">
+			<forward name="noRegistrado" path="/loginform.jsp" />
+			<forward name="registrado" path="/bajaPage.jsp" />
+		</action>
+		<action path="/fromhomemodificar" 
+			type= "com.mistrutswebapp.action.PageHomeAction" 
+			input="/homePage.jsp">
+			<forward name="noRegistrado" path="/loginform.jsp" />
+			<forward name="registrado" path="/modificarPage.jsp" />
+		</action>
+		<action path="/fromhomeeliminar" 
+			type= "com.mistrutswebapp.action.PageHomeAction" 
+			input="/homePage.jsp">
+			<forward name="noRegistrado" path="/loginform.jsp" />
+			<forward name="registrado" path="/eliminarPage.jsp" />
+		</action>
+		<action path="/fromhomecrear" 
+			type= "com.mistrutswebapp.action.PageHomeAction" 
+			input="/homePage.jsp">
+			<forward name="noRegistrado" path="/loginform.jsp" />
+			<forward name="registrado" path="/crearPage.jsp" />
+		</action>
+		<action path="/fromhomeadministrar" 
+			type= "com.mistrutswebapp.action.PageHomeAction" 
+			input="/homePage.jsp">
+			<forward name="noRegistrado" path="/loginform.jsp" />
+			<forward name="registrado" path="/administrarPage.jsp" />
+		</action>
+		<action path="/processlogin"
+	   		type="com.mistrutswebapp.action.LoginAction"
+	   		name="loginBean"
+		   	scope="request"
+		   	validate="true" 
+		   	input="/loginform.jsp" > 
+		   	<forward name="found" path="/displaylogin.jsp" />
+		   	<forward name="notfound" path="/notfound.jsp" />
+		</action>		
+		<action path="/creaBD"
+			type="com.mistrutswebapp.action.CreaBDAction"
+			input= "/homePage.jsp">
+			<forward name="Ok" path= "/creadaBD.jsp"/> 
+			<forward name="error" path= "/notfound.jsp"/> 
+		</action>
+	</action-mappings>	
+ 	<message-resources parameter="ApplicationResources_es" />
+ 	<plug-in className="org.apache.struts.validator.ValidatorPlugIn"> 
+  		<set-property property="pathnames" value="/org/apache/struts/validator/validator-rules-compressed.xml, /WEB-INF/validation.xml"/> 
+ 	</plug-in>
 </struts-config>

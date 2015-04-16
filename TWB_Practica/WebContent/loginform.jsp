@@ -9,35 +9,36 @@
  doctype-root-element="html"
  doctype-public="-//W3C//DTD XHTML 1.1//EN" 
  doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" />
- <html:html xhtml="true">
-  <head>
-   <link href="threeregion.css" rel="stylesheet" type="text/css" />
-   <title>Login</title>
-  </head>
-  <body>
+<html:html xhtml="true">
+<head>
+	<link href="threeregion.css" rel="stylesheet" type="text/css" />
+	<title>Login</title>
+</head>
+<body>
   	<jsp:directive.include file="header.jsp" />
-   <h1>Introduzca su nombre de usuario y contraseña</h1>
-<!--    <h2>Please provide information about your claim in the form below, then click submit, y si no lo entiendes lo hablaremos después</h2> -->
-   <html:form action="/processlogin"> 
+	<h1 align="center">Introduzca su nombre de usuario y contraseña</h1>
+	<h2 align= "center">El acceso a esta página solo está permitido para usuarios registrados</h2>
+	<h3>Introduzca sus credenciales y pulse Enviar</h3>
+   	<html:form action="/processlogin"> 
     <table>
-     <tr>
-      <td>Nombre Usuario</td>
-      <td><html:text property="userName"/></td>
-      <td><html:errors property="userName" /></td>
-     </tr>
-     <tr>
-      <td>Contraseña</td>
-      <td><html:password property="password"/></td>
-      <td><html:errors property="password" /></td>
-     </tr>
-   <tr>
-    <td></td>
-    <td><html:submit>Submit</html:submit></td>
-    <td></td>
-   </tr>
-  </table>
-  </html:form>
-  <jsp:directive.include file="footer.jsp" />
-  </body>
- </html:html>
+		<tr>
+			<td>Nombre Usuario</td>
+			<td><html:text property="userName"/></td>
+			<td><html:errors property="userName" /></td>
+	    </tr>
+	    <tr>
+			<td>Contraseña</td>
+			<td><html:password property="password"/></td>
+			<td><html:errors property="password" /></td>
+	    </tr>
+		<tr>
+		    <td></td>
+		    <td><html:submit>Enviar</html:submit></td>
+		    <td></td>
+	    </tr>
+  	</table>
+ 	</html:form>
+  	<jsp:directive.include file="footer.jsp" />
+</body>
+</html:html>
 </jsp:root>

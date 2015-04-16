@@ -1,5 +1,6 @@
-h1{color:blue}
-h2{color:red; font-style:italic}
+h1{color:blue; text-align:center}
+h2{color:red; font-style:italic; text-align:center}
+h3{font-weigth:bold; text-align:center}
 p{font-family:sans-serif}
 .heading{text-align:center}
 p.emphasis{font-weight:bold}
@@ -13,9 +14,10 @@ a:hover{font-weight: bold}
 a:active{font-style:italic}
 #navigationbar {color: white; background-color: rgb(189,197,0)}
 #leftnavigation {float: left; height: 600px; color: white; background-color: rgb(189,143,0)}
-#content {float:left;
+#content {
 	margin-left: 1.1em;
-	margin-right: 1.1em
+	margin-right: 1.1em;
+	/*border: thick solid #000*/
 }
 /* #rightnavigation {float: right; height: 400px; color: white; background-color: rgb(204,255,51)}*/
 
