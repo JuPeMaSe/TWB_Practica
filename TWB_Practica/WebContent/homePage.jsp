@@ -26,7 +26,7 @@
 	<!-- <p>Sigo intentando entender como funciona Github</p> Comento para modificar-->
 
 	    <h1>LinkUNEDin</h1>
-	    <h2>Conectando a trabajadores</h2>
+	    <h2>Conectando a trabajadores\as</h2>
 	    <h3>Página de inicio del portal</h3>
 	    <p>Este portal se ha creado para aquellos profesionales que decidan compartir con nosotros su currículo, así como, permitir una mejor entrada en el mercado laboral</p>
 	    <p><html:link action="fromhomeconsulta.do">Hacer una consulta </html:link></p>
