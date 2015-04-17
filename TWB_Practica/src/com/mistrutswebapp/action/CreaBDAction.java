@@ -52,18 +52,27 @@ public class CreaBDAction extends Action {
 			  log.info("In LoginAction despues de connection");
          // try {  
               st  = con.createStatement();  
-              sql = "CREATE TABLE usuarios (user_ID VARCHAR(20), password VARCHAR(12), nombre VARCHAR(100))";  
+             // sql = "CREATE TABLE usuarios (user_ID VARCHAR(20), password VARCHAR(12), nombre VARCHAR(100))";
+              sql = "CREATE TABLE Usuario(" +
+              		"User_ID VARCHAR(30) NOT NULL PRIMARY KEY," +
+              		"	Password VARCHAR(30)," +
+              		"	Nombre VARCHAR(50)," +
+              		"	Apellidos VARCHAR(60)," +
+              		"	Fe_Nac DATE," +
+              		"	Tfno CHAR(9)," +
+              		"	Email VARCHAR(60)," +
+              		"	UserType VARCHAR(3))";
               st.executeUpdate(sql);
               //Borramos los usuarios que existiesen en la tabla usuarios  
-              st.executeUpdate("DELETE FROM usuarios");  
+              st.executeUpdate("DELETE FROM Usuario");  
            // Varios usuarios de prueba  
-              st.executeUpdate("INSERT INTO usuarios (user_ID, password, nombre) VALUES ('jpms', '4367',  'Juan Pedro Marquez Sevilla')");
-              st.executeUpdate("INSERT INTO usuarios (user_ID, password, nombre) VALUES ('ja', '5367',  'Jose Angel')");  
-      			st.executeUpdate("INSERT INTO usuarios (user_ID, password, nombre) VALUES ('jj', '6367',  'Juan Jose')");  
+              st.executeUpdate("INSERT INTO Usuario (User_ID, Password, Nombre) VALUES ('jpms', '4367',  'Juan Pedro Marquez Sevilla')");
+              st.executeUpdate("INSERT INTO usuarios (User_ID, Password, Nombre) VALUES ('ja', '5367',  'Jose Angel')");  
+      			st.executeUpdate("INSERT INTO usuarios (User_ID, Password, Nombre) VALUES ('jj', '6367',  'Juan Jose')");  
 	// Mostramos por pantalla todos los usuarios de la tabla  
-            rst1 = st.executeQuery("SELECT * FROM usuarios");  
+            rst1 = st.executeQuery("SELECT * FROM Usuario");  
             while (rst1.next()){  
-                log.info("In CreaBDAction --> "+ rst1.getString("user_ID") + " " + rst1.getString("password") + " " + rst1.getString("nombre") );  
+                log.info("In CreaBDAction --> "+ rst1.getString("User_ID") + " " + rst1.getString("Password") + " " + rst1.getString("Nombre") );  
             }  
               // Enviamos el comando para que salve todos los datos temporales de forma permanente  
  //             st = con.createStatement();  

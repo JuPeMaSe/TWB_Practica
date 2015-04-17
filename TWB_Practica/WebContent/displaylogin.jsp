@@ -24,7 +24,7 @@
 		<h1>Usuario <jsp:getProperty property="userName" name="loginBean"/> registrado correctamente</h1>
 		
 		<p>Si el navegador no le muestra la pantalla de inicio, pulse: 
-			<html:link action="home"><bean:message key="display.link" /></html:link>
+			<html:link action="home"><bean:message key="tohome.link" /></html:link>
 		</p>
 	</div>
 	<jsp:directive.include file="footer.jsp" />

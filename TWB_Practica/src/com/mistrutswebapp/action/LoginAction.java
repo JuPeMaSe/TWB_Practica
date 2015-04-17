@@ -48,11 +48,11 @@ public class LoginAction extends Action
 	         con=ds.getConnection();
 	         st= con.createStatement();
 	         //log.info("In LoginAction --> st createstatemen");
-	         sql = "SELECT * from usuarios";
+	         sql = "SELECT * from Usuario";
 	         rst1 = st.executeQuery(sql);
 	         while (rst1.next()){
-	        	 log.info("In LoginAction retocado --> "+ rst1.getString("user_ID") + " " + rst1.getString("password") + " " + rst1.getString("nombre") );
-	        	 if((rst1.getString("user_ID")).equals(id) && rst1.getString("password").equals(contras))
+	        	 log.info("In LoginAction retocado --> "+ rst1.getString("User_ID") + " " + rst1.getString("Password") + " " + rst1.getString("Nombre") );
+	        	 if((rst1.getString("User_ID")).equals(id) && rst1.getString("Password").equals(contras))
 	        	 {
 	        		 log.info("In LoginAction --> usuario encontrado en BD");
 	        		 session.setAttribute("loginBean", loginBean);

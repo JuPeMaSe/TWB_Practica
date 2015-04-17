@@ -24,7 +24,7 @@
 		</p>
 	 	<h1>Página de Alta</h1>
 		<p>Aquí hay que desarrollar el formulario de alta de usuario.OkJuan</p>
-		 <html:link action="home"><bean:message key="display.link" /></html:link>
+		 <html:link action="home"><bean:message key="tohome.link" /></html:link>
 	</div>
 	<jsp:directive.include file="footer.jsp" />
 </body>

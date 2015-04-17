@@ -23,7 +23,7 @@
     <bean:write name="loginBean" property="userName" />
     <bean:message key="notfound.message" />
   <hr />
-  <html:link action="home"><bean:message key="display.link" /></html:link>
+  <html:link action="home"><bean:message key="tohome.link" /></html:link>
   <jsp:directive.include file="footer.jsp" />
   </body>
 </html:html>

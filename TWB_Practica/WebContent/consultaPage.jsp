@@ -22,7 +22,7 @@
 			<jsp:getProperty property="userName" name="loginBean"/>
 		</p>
 		<h1>Página de Consulta</h1>
-		<html:link action="home"><bean:message key="display.link" /></html:link>
+		<html:link action="home"><bean:message key="tohome.link" /></html:link>
 	</div>
 	<jsp:directive.include file="footer.jsp" />
 </body>

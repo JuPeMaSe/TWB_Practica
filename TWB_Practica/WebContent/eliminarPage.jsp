@@ -23,7 +23,7 @@
 		</p>
 		<h1>Página eliminar perfil</h1>
 		<p>Aquí habrá que mostrar el perfil o los perfiles a eliminar</p>
-		<html:link action="home"><bean:message key="display.link" /></html:link>
+		<html:link action="home"><bean:message key="tohome.link" /></html:link>
 	</div>
 	<jsp:directive.include file="footer.jsp" />
 </body>

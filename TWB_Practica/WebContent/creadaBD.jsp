@@ -16,6 +16,8 @@
 <body>
 	<jsp:directive.include file="header.jsp" />
 	<h1>Creada base de datos provisional</h1>
+
+	
 	<a href="homePage.jsp">Pulsa para volver la página de inicio</a>
 	<jsp:directive.include file="footer.jsp" />
 </body>
